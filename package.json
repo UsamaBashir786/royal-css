@@ -1,5 +1,5 @@
 {
-  "name": "royalcssx",
+  "name": "royalcss",
   "version": "1.0.1",
   "description": "RoyalCSS – A lightweight CSS & JS animation + utility framework by Usama Bashir (Royal Code).",
   "main": "dist/royal.js",
