@@ -1,0 +1,18 @@
+{
+  "name": "royalcss",
+  "version": "1.0.0",
+  "description": "RoyalCSS – a modern animation + JS utility library for developers who love speed and simplicity.",
+  "main": "dist/royal.js",
+  "style": "dist/royal.css",
+  "author": "Usama Bashir",
+  "license": "MIT",
+  "keywords": ["css", "animation", "utility", "javascript", "frontend", "royalcss", "webdev"],
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UsamaBashir/royalcss"
+  },
+  "homepage": "https://usamabashir.github.io/royalcss-docs"
+}

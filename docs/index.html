@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Code Library - Complete Documentation</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1>🎨 Royal Code Library</h1>
+      <div class="badges">
+        <span class="badge">v1.0.0</span>
+        <span class="badge">100+ Animations</span>
+        <span class="badge">20+ Components</span>
+        <span class="badge">Zero Dependencies</span>
+        <span class="badge">MIT License</span>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#installation" class="nav-link">Installation</a>
+        <a href="#css-animations" class="nav-link">CSS Animations</a>
+        <a href="#js-components" class="nav-link">JS Components</a>
+        <a href="#examples" class="nav-link">Examples</a>
+        <a href="#api" class="nav-link">API Reference</a>
+      </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h3>📑 Table of Contents</h3>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#css-animations">CSS Animations</a></li>
+          <li><a href="#fade-animations">├─ Fade</a></li>
+          <li><a href="#zoom-animations">├─ Zoom</a></li>
+          <li><a href="#rotate-animations">├─ Rotate</a></li>
+          <li><a href="#special-effects">└─ Special</a></li>
+          <li><a href="#modifiers">Modifiers</a></li>
+          <li><a href="#js-components">JS Components</a></li>
+          <li><a href="#hamburger">├─ Hamburger</a></li>
+          <li><a href="#modal">├─ Modal</a></li>
+          <li><a href="#toast">├─ Toast</a></li>
+          <li><a href="#forms">└─ Forms</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#api">API Reference</a></li>
+          <li><a href="#troubleshooting">Troubleshooting</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <!-- Overview Section -->
+        <section id="overview" class="section">
+          <h2>🎯 Overview</h2>
+
+          <p>
+            <strong>Royal Code</strong> is a comprehensive, lightweight library
+            that provides everything you need to build modern, animated websites
+            with minimal effort.
+          </p>
+
+          <div class="card-grid">
+            <div class="card">
+              <h4>🎨 100+ CSS Animations</h4>
+              <p>
+                Extensive collection of scroll-triggered animations with
+                easy-to-use classes and the
+                <code class="code-inline">rc-</code> prefix.
+              </p>
+            </div>
+
+            <div class="card">
+              <h4>⚡ 20+ JS Components</h4>
+              <p>
+                Pre-built components for hamburger menus, modals, forms, toasts,
+                and more.
+              </p>
+            </div>
+
+            <div class="card">
+              <h4>🚀 Zero Dependencies</h4>
+              <p>
+                Completely standalone library. No jQuery, no external
+                dependencies.
+              </p>
+            </div>
+
+            <div class="card">
+              <h4>📱 Fully Responsive</h4>
+              <p>Works perfectly on all devices with mobile-first approach.</p>
+            </div>
+
+            <div class="card">
+              <h4>⚙️ Easy to Customize</h4>
+              <p>Simple API and well-structured code for easy customization.</p>
+            </div>
+
+            <div class="card">
+              <h4>📖 Well Documented</h4>
+              <p>
+                Comprehensive documentation with examples and best practices.
+              </p>
+            </div>
+          </div>
+
+          <div class="alert alert-info">
+            <strong>💡 Pro Tip:</strong> All animation classes use the
+            <code class="code-inline">rc-</code> prefix to avoid conflicts with
+            other libraries.
+          </div>
+        </section>
+
+        <!-- Installation Section -->
+        <section id="installation" class="section">
+          <h2>📦 Installation</h2>
+
+          <h3>Direct Include</h3>
+
+          <div class="code-block">
+            <span class="lang-label">HTML</span>
+            <pre><span class="comment">&lt;!-- CSS Animation Library --&gt;</span>
+<span class="keyword">&lt;link</span> <span class="string">rel</span>=<span class="string">"stylesheet"</span> <span class="string">href</span>=<span class="string">"path/to/royal-code-animations.css"</span><span class="keyword">&gt;</span>
+
+<span class="comment">&lt;!-- JavaScript Library --&gt;</span>
+<span class="keyword">&lt;script</span> <span class="string">src</span>=<span class="string">"path/to/royal-code.js"</span><span class="keyword">&gt;&lt;/script&gt;</span></pre>
+          </div>
+          <!-- <h2>📦 Installation</h2>
+      
+      <h3>Method 1: Direct Include (Recommended)</h3>
+      
+      <div class="code-block">
+        <span class="lang-label">HTML</span>
+<pre><span class="comment">&lt;!-- CSS Animation Library --&gt;</span>
+<span class="keyword">&lt;link</span> <span class="string">rel</span>=<span class="string">"stylesheet"</span> <span class="string">href</span>=<span class="string">"path/to/royal-code-animations.css"</span><span class="keyword">&gt;</span>
+
+<span class="comment">&lt;!-- JavaScript Library --&gt;</span>
+<span class="keyword">&lt;script</span> <span class="string">src</span>=<span class="string">"path/to/royal-code.js"</span><span class="keyword">&gt;&lt;/script&gt;</span></pre>
+      </div> -->
+
+          <!-- <h3>Method 2: NPM Installation</h3>
+      
+      <div class="code-block">
+        <span class="lang-label">BASH</span>
+<pre>npm install royal-code-library</pre>
+      </div>
+      
+      <div class="code-block">
+        <span class="lang-label">JAVASCRIPT</span>
+<pre><span class="keyword">import</span> RoyalCode <span class="keyword">from</span> <span class="string">'royal-code-library'</span>;
+<span class="keyword">import</span> <span class="string">'royal-code-library/dist/animations.css'</span>;</pre>
+      </div> -->
+
+          <h3>Quick Start</h3>
+
+          <div class="code-block">
+            <span class="lang-label">HTML</span>
+            <pre><span class="comment">&lt;!-- Add animation to any element --&gt;</span>
+<span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up"</span><span class="keyword">&gt;</span>
+  This content fades up when scrolled into view
+<span class="keyword">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Initialize JavaScript --&gt;</span>
+<span class="keyword">&lt;script&gt;</span>
+  <span class="comment">// Auto-initialize all components</span>
+  RoyalCode.<span class="function">init</span>();
+<span class="keyword">&lt;/script&gt;</span></pre>
+          </div>
+
+          <div class="alert alert-success">
+            <strong>✅ That's it!</strong> You're ready to start building
+            amazing animated websites.
+          </div>
+        </section>
+
+        <!-- CSS Animations Section -->
+        <section id="css-animations" class="section">
+          <h2>🎨 CSS Animation Library</h2>
+
+          <p>
+            Royal Code includes <strong>100+ animation classes</strong> that
+            automatically trigger when elements scroll into view. All classes
+            use the <code class="code-inline">rc-</code> prefix.
+          </p>
+
+          <h3 id="fade-animations">1. Fade Animations</h3>
+
+          <p>Smooth opacity transitions with directional movement.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Description</th>
+                <th>Variants</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="code-inline">rc-fade</code></td>
+                <td>Basic fade in</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-fade-up</code></td>
+                <td>Fade in from bottom</td>
+                <td>sm, lg</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-fade-down</code></td>
+                <td>Fade in from top</td>
+                <td>sm, lg</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-fade-left</code></td>
+                <td>Fade in from right</td>
+                <td>sm, lg</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-fade-right</code></td>
+                <td>Fade in from left</td>
+                <td>sm, lg</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="demo">
+            <div class="demo-title">Example:</div>
+            <div class="code-block">
+              <span class="lang-label">HTML</span>
+              <pre><span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up"</span><span class="keyword">&gt;</span>Fades up<span class="keyword">&lt;/div&gt;</span>
+<span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-left-lg"</span><span class="keyword">&gt;</span>Large fade from right<span class="keyword">&lt;/div&gt;</span></pre>
+            </div>
+          </div>
+
+          <h3 id="zoom-animations">2. Zoom Animations</h3>
+
+          <p>Scale-based entrance effects.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="code-inline">rc-zoom-in</code></td>
+                <td>Zoom in from small</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-zoom-out</code></td>
+                <td>Zoom in from large</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-zoom-in-up</code></td>
+                <td>Zoom + move up</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-zoom-in-down</code></td>
+                <td>Zoom + move down</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-zoom-in-left</code></td>
+                <td>Zoom + move left</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-zoom-in-right</code></td>
+                <td>Zoom + move right</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 id="rotate-animations">3. Rotate Animations</h3>
+
+          <p>Spinning entrance effects.</p>
+
+          <div class="code-block">
+            <span class="lang-label">HTML</span>
+            <pre><span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-rotate-in"</span><span class="keyword">&gt;</span>Rotates 180°<span class="keyword">&lt;/div&gt;</span>
+<span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-rotate-45"</span><span class="keyword">&gt;</span>Rotates 45°<span class="keyword">&lt;/div&gt;</span>
+<span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-rotate-360"</span><span class="keyword">&gt;</span>Full rotation<span class="keyword">&lt;/div&gt;</span></pre>
+          </div>
+
+          <h3 id="special-effects">4. Special Effects</h3>
+
+          <p>Unique animations for modern designs.</p>
+
+          <div class="card-grid">
+            <div class="card">
+              <h4>rc-glitch</h4>
+              <p>Glitch distortion effect</p>
+            </div>
+            <div class="card">
+              <h4>rc-pulse</h4>
+              <p>Pulsing animation</p>
+            </div>
+            <div class="card">
+              <h4>rc-shake</h4>
+              <p>Shaking effect</p>
+            </div>
+            <div class="card">
+              <h4>rc-swing</h4>
+              <p>Swinging motion</p>
+            </div>
+            <div class="card">
+              <h4>rc-wobble</h4>
+              <p>Wobbling effect</p>
+            </div>
+            <div class="card">
+              <h4>rc-heartbeat</h4>
+              <p>Heartbeat pulse</p>
+            </div>
+          </div>
+
+          <div class="alert alert-info">
+            <strong>💡 Full List:</strong> The library includes 100+ animations.
+            Check the CSS file for the complete list.
+          </div>
+        </section>
+
+        <!-- Modifiers Section -->
+        <section id="modifiers" class="section">
+          <h2>⚙️ Animation Modifiers</h2>
+
+          <h3>Speed Control</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Class</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="code-inline">rc-speed-instant</code></td>
+                <td>0.2s</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-speed-fast</code></td>
+                <td>0.4s</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-speed-normal</code></td>
+                <td>0.8s (default)</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-speed-slow</code></td>
+                <td>1.2s</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-speed-slower</code></td>
+                <td>1.8s</td>
+              </tr>
+              <tr>
+                <td><code class="code-inline">rc-speed-ultra-slow</code></td>
+                <td>2.5s</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Delay Control</h3>
+
+          <p>Add delays before animation starts:</p>
+
+          <div class="code-block">
+            <span class="lang-label">HTML</span>
+            <pre><span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up rc-delay-100"</span><span class="keyword">&gt;</span>100ms delay<span class="keyword">&lt;/div&gt;</span>
+<span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up rc-delay-300"</span><span class="keyword">&gt;</span>300ms delay<span class="keyword">&lt;/div&gt;</span>
+<span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up rc-delay-500"</span><span class="keyword">&gt;</span>500ms delay<span class="keyword">&lt;/div&gt;</span></pre>
+          </div>
+
+          <p>
+            <strong>Available delays:</strong> 50, 100, 150, 200, 250, 300, 400,
+            500, 600, 700, 800, 900, 1000, 1200, 1500, 2000 (ms)
+          </p>
+
+          <h3>Easing Functions</h3>
+
+          <div class="code-block">
+            <span class="lang-label">HTML</span>
+            <pre><span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up rc-ease-linear"</span><span class="keyword">&gt;</span>Linear<span class="keyword">&lt;/div&gt;</span>
+<span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up rc-ease-bounce"</span><span class="keyword">&gt;</span>Bounce<span class="keyword">&lt;/div&gt;</span>
+<span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up rc-ease-elastic"</span><span class="keyword">&gt;</span>Elastic<span class="keyword">&lt;/div&gt;</span></pre>
+          </div>
+
+          <h3>Stagger Animations</h3>
+
+          <p>Animate multiple children sequentially:</p>
+
+          <div class="code-block">
+            <span class="lang-label">HTML</span>
+            <pre><span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-stagger-200"</span><span class="keyword">&gt;</span>
+  <span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up"</span><span class="keyword">&gt;</span>Item 1<span class="keyword">&lt;/div&gt;</span>
+  <!-- <span class="keyword" -->
+   <span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up"</span><span class="keyword">&gt;</span>Item 2<span class="keyword">&lt;/div&gt;</span>
+  <span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-fade-up"</span><span class="keyword">&gt;</span>Item 3<span class="keyword">&lt;/div&gt;</span>
+<span class="keyword">&lt;/div&gt;</span></pre>
+          </div>
+        </section>
+
+        <!-- JS Components Section -->
+        <section id="js-components" class="section">
+          <h2>⚡ JavaScript Components</h2>
+
+          <p>
+            Royal Code includes 20+ pre-built, production-ready components for
+            common website functionality.
+          </p>
+
+          <h3 id="hamburger">1. Hamburger Menu</h3>
+
+          <p>Responsive mobile menu with smooth animations.</p>
+
+          <div class="code-block">
+            <span class="lang-label">HTML</span>
+            <pre><span class="keyword">&lt;button</span> <span class="string">data-rc-hamburger</span><span class="keyword">&gt;</span>☰<span class="keyword">&lt;/button&gt;</span>
+<span class="keyword">&lt;nav</span> <span class="string">data-rc-menu</span><span class="keyword">&gt;</span>
+  <span class="keyword">&lt;a</span> <span class="string">href</span>=<span class="string">"#"</span><span class="keyword">&gt;</span>Home<span class="keyword">&lt;/a&gt;</span>
+  <span class="keyword">&lt;a</span> <span class="string">href</span>=<span class="string">"#"</span><span class="keyword">&gt;</span>About<span class="keyword">&lt;/a&gt;</span>
+  <span class="keyword">&lt;a</span> <span class="string">href</span>=<span class="string">"#"</span><span class="keyword">&gt;</span>Services<span class="keyword">&lt;/a&gt;</span>
+<span class="keyword">&lt;/nav&gt;</span>
+<span class="keyword">&lt;div</span> <span class="string">data-rc-overlay</span><span class="keyword">&gt;&lt;/div&gt;</span></pre>
+          </div>
+
+          <div class="code-block">
+            <span class="lang-label">JAVASCRIPT</span>
+            <pre><span class="keyword">new</span> RoyalCode.HamburgerMenu({
+  closeOnLinkClick: <span class="keyword">true</span>,
+  closeOnEsc: <span class="keyword">true</span>,
+  bodyScrollLock: <span class="keyword">true</span>
+});</pre>
+          </div>
+
+          <h3 id="modal">2. Modal Manager</h3>
+
+          <p>
+            Advanced modal system with multiple instances, queueing, and
+            callbacks.
+          </p>
+
+          <div class="code-block">
+            <span class="lang-label">HTML</span>
+            <pre><span class="keyword">&lt;button</span> <span class="string">data-rc-modal-trigger</span>=<span class="string">"myModal"</span><span class="keyword">&gt;</span>
+  Open Modal
+<span class="keyword">&lt;/button&gt;</span>
+
+<span class="keyword">&lt;div</span> <span class="string">data-rc-modal</span>=<span class="string">"myModal"</span><span class="keyword">&gt;</span>
+  <span class="keyword">&lt;div</span> <span class="string">data-rc-modal-overlay</span><span class="keyword">&gt;&lt;/div&gt;</span>
+  <span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"modal-content"</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;button</span> <span class="string">data-rc-modal-close</span><span class="keyword">&gt;</span>✕<span class="keyword">&lt;/button&gt;</span>
+    <span class="keyword">&lt;h2&gt;</span>Modal Title<span class="keyword">&lt;/h2&gt;</span>
+    <span class="keyword">&lt;p&gt;</span>Modal content here<span class="keyword">&lt;/p&gt;</span>
+  <span class="keyword">&lt;/div&gt;</span>
+<span class="keyword">&lt;/div&gt;</span></pre>
+          </div>
+
+          <div class="code-block">
+            <span class="lang-label">JAVASCRIPT</span>
+            <pre><span class="keyword">const</span> modal = <span class="keyword">new</span> RoyalCode.ModalManager({
+  closeOnEsc: <span class="keyword">true</span>,
+  sequential: <span class="keyword">true</span>
+});</pre>
+          </div>
+
+          <h3 id="toast">3. Toast Notifications</h3>
+
+          <p>Non-blocking notifications with multiple positions and types.</p>
+
+          <div class="code-block">
+            <span class="lang-label">JAVASCRIPT</span>
+            <pre><span class="keyword">const</span> toast = <span class="keyword">new</span> RoyalCode.Toast({
+  position: <span class="string">'top-right'</span>,
+  duration: <span class="number">3000</span>
+});
+
+toast.<span class="function">success</span>(<span class="string">'Operation successful!'</span>);
+toast.<span class="function">error</span>(<span class="string">'An error occurred'</span>);
+toast.<span class="function">warning</span>(<span class="string">'Please be careful'</span>);
+toast.<span class="function">info</span>(<span class="string">'This is information'</span>);</pre>
+          </div>
+
+          <h3 id="forms">4. Form Validation</h3>
+
+          <p>Real-time form validation with custom error messages.</p>
+
+          <div class="code-block">
+            <span class="lang-label">HTML</span>
+            <pre><span class="keyword">&lt;form</span> <span class="string">id</span>=<span class="string">"contactForm"</span><span class="keyword">&gt;</span>
+  <span class="keyword">&lt;input</span> <span class="string">type</span>=<span class="string">"text"</span> <span class="string">name</span>=<span class="string">"name"</span> <span class="string">required</span> <span class="keyword">/&gt;</span>
+  <span class="keyword">&lt;input</span> <span class="string">type</span>=<span class="string">"email"</span> <span class="string">name</span>=<span class="string">"email"</span> <span class="string">required</span> <span class="keyword">/&gt;</span>
+  <span class="keyword">&lt;textarea</span> <span class="string">name</span>=<span class="string">"message"</span> <span class="string">required</span> <span class="string">minlength</span>=<span class="string">"10"</span><span class="keyword">&gt;&lt;/textarea&gt;</span>
+  <span class="keyword">&lt;button</span> <span class="string">type</span>=<span class="string">"submit"</span><span class="keyword">&gt;</span>Submit<span class="keyword">&lt;/button&gt;</span>
+<span class="keyword">&lt;/form&gt;</span></pre>
+          </div>
+
+          <div class="code-block">
+            <span class="lang-label">JAVASCRIPT</span>
+            <pre><span class="keyword">new</span> RoyalCode.FormValidator(<span class="string">'#contactForm'</span>, {
+  onSubmit: <span class="function">(data)</span> => {
+    console.<span class="function">log</span>(<span class="string">'Form data:'</span>, data);
+  }
+});</pre>
+          </div>
+
+          <h3>5. Other Components</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Purpose</th>
+                <th>Usage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ScrollAnimations</td>
+                <td>Auto-trigger animations on scroll</td>
+                <td>
+                  <code class="code-inline"
+                    >new RoyalCode.ScrollAnimations()</code
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>SmoothScroll</td>
+                <td>Smooth anchor scrolling</td>
+                <td>
+                  <code class="code-inline">new RoyalCode.SmoothScroll()</code>
+                </td>
+              </tr>
+              <tr>
+                <td>Tabs</td>
+                <td>Tab navigation</td>
+                <td><code class="code-inline">new RoyalCode.Tabs()</code></td>
+              </tr>
+              <tr>
+                <td>Accordion</td>
+                <td>Collapsible content</td>
+                <td>
+                  <code class="code-inline">new RoyalCode.Accordion()</code>
+                </td>
+              </tr>
+              <tr>
+                <td>LazyLoad</td>
+                <td>Lazy load images</td>
+                <td>
+                  <code class="code-inline">new RoyalCode.LazyLoad()</code>
+                </td>
+              </tr>
+              <tr>
+                <td>CounterAnimation</td>
+                <td>Animated counters</td>
+                <td>
+                  <code class="code-inline"
+                    >new RoyalCode.CounterAnimation()</code
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>StickyHeader</td>
+                <td>Sticky navigation</td>
+                <td>
+                  <code class="code-inline">new RoyalCode.StickyHeader()</code>
+                </td>
+              </tr>
+              <tr>
+                <td>Lightbox</td>
+                <td>Image gallery</td>
+                <td>
+                  <code class="code-inline">new RoyalCode.Lightbox()</code>
+                </td>
+              </tr>
+              <tr>
+                <td>CursorFollower</td>
+                <td>Custom cursor</td>
+                <td>
+                  <code class="code-inline"
+                    >new RoyalCode.CursorFollower()</code
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>ScrollToTop</td>
+                <td>Scroll to top button</td>
+                <td>
+                  <code class="code-inline">new RoyalCode.ScrollToTop()</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples" class="section">
+          <h2>📚 Real-World Examples</h2>
+
+          <h3>Complete Landing Page Setup</h3>
+
+          <div class="code-block">
+            <span class="lang-label">HTML</span>
+            <pre><span class="keyword">&lt;!DOCTYPE</span> html<span class="keyword">&gt;</span>
+<span class="keyword">&lt;html&gt;</span>
+<span class="keyword">&lt;head&gt;</span>
+  <span class="keyword">&lt;link</span> <span class="string">rel</span>=<span class="string">"stylesheet"</span> <span class="string">href</span>=<span class="string">"royal-code-animations.css"</span><span class="keyword">&gt;</span>
+<span class="keyword">&lt;/head&gt;</span>
+<span class="keyword">&lt;body&gt;</span>
+
+  <span class="comment">&lt;!-- Hero Section --&gt;</span>
+  <span class="keyword">&lt;section</span> <span class="string">class</span>=<span class="string">"hero"</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;h1</span> <span class="string">class</span>=<span class="string">"rc-fade-down"</span><span class="keyword">&gt;</span>Welcome<span class="keyword">&lt;/h1&gt;</span>
+    <span class="keyword">&lt;p</span> <span class="string">class</span>=<span class="string">"rc-fade-up rc-delay-300"</span><span class="keyword">&gt;</span>Amazing animations<span class="keyword">&lt;/p&gt;</span>
+  <span class="keyword">&lt;/section&gt;</span>
+
+  <span class="comment">&lt;!-- Features --&gt;</span>
+  <span class="keyword">&lt;section</span> <span class="string">class</span>=<span class="string">"features rc-stagger-200"</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-zoom-in"</span><span class="keyword">&gt;</span>Feature 1<span class="keyword">&lt;/div&gt;</span>
+    <span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-zoom-in"</span><span class="keyword">&gt;</span>Feature 2<span class="keyword">&lt;/div&gt;</span>
+    <span class="keyword">&lt;div</span> <span class="string">class</span>=<span class="string">"rc-zoom-in"</span><span class="keyword">&gt;</span>Feature 3<span class="keyword">&lt;/div&gt;</span>
+  <span class="keyword">&lt;/section&gt;</span>
+
+  <span class="keyword">&lt;script</span> <span class="string">src</span>=<span class="string">"royal-code.js"</span><span class="keyword">&gt;&lt;/script&gt;</span>
+  <span class="keyword">&lt;script&gt;</span>
+    RoyalCode.<span class="function">init</span>();
+  <span class="keyword">&lt;/script&gt;</span>
+<span class="keyword">&lt;/body&gt;</span>
+<span class="keyword">&lt;/html&gt;</span></pre>
+          </div>
+
+          <h3>Advanced Modal with Callbacks</h3>
+
+          <div class="code-block">
+            <span class="lang-label">JAVASCRIPT</span>
+            <pre><span class="keyword">const</span> modalManager = <span class="keyword">new</span> RoyalCode.ModalManager();
+
+modalManager.<span class="function">register</span>(<span class="string">'loginModal'</span>, 
+  document.<span class="function">getElementById</span>(<span class="string">'loginModal'</span>), {
+  onOpen: () => console.<span class="function">log</span>(<span class="string">'Modal opened'</span>),
+  onClose: () => console.<span class="function">log</span>(<span class="string">'Modal closed'</span>),
+  beforeClose: () => {
+    <span class="keyword">return</span> <span class="function">confirm</span>(<span class="string">'Close without saving?'</span>);
+  }
+});</pre>
+          </div>
+        </section>
+
+        <!-- API Reference -->
+        <section id="api" class="section">
+          <h2>📖 API Reference</h2>
+
+          <h3>Utils Object</h3>
+
+          <div class="code-block">
+            <span class="lang-label">JAVASCRIPT</span>
+            <pre><span class="comment">// Select elements</span>
+RoyalCode.Utils.<span class="function">select</span>(<span class="string">'.selector'</span>);
+RoyalCode.Utils.<span class="function">selectAll</span>(<span class="string">'.selectors'</span>);
+
+<span class="comment">// Event handlers</span>
+RoyalCode.Utils.<span class="function">on</span>(element, <span class="string">'click'</span>, handler);
+RoyalCode.Utils.<span class="function">off</span>(element, <span class="string">'click'</span>, handler);
+
+<span class="comment">// Utility functions</span>
+RoyalCode.Utils.<span class="function">debounce</span>(func, <span class="number">300</span>);
+RoyalCode.Utils.<span class="function">throttle</span>(func, <span class="number">300</span>);
+RoyalCode.Utils.<span class="function">isInViewport</span>(element);
+RoyalCode.Utils.<span class="function">getOffset</span>(element);</pre>
+          </div>
+
+          <h3>Global Init Method</h3>
+
+          <div class="code-block">
+            <span class="lang-label">JAVASCRIPT</span>
+            <pre>RoyalCode.<span class="function">init</span>({
+  hamburger: <span class="keyword">true</span>,
+  modal: <span class="keyword">true</span>,
+  scrollAnimations: <span class="keyword">true</span>,
+  smoothScroll: <span class="keyword">true</span>,
+  stickyHeader: <span class="keyword">true</span>,
+  lazyLoad: <span class="keyword">true</span>,
+  counterAnimation: <span class="keyword">true</span>,
+  parallax: <span class="keyword">true</span>,
+  dropdown: <span class="keyword">true</span>,
+  scrollToTop: <span class="keyword">true</span>,
+  preloader: <span class="keyword">true</span>,
+  copyToClipboard: <span class="keyword">true</span>,
+  lightbox: <span class="keyword">true</span>
+});</pre>
+          </div>
+
+          <div class="alert alert-success">
+            <strong>✅ Shorthand:</strong> Use
+            <code class="code-inline">RC</code> as an alias for
+            <code class="code-inline">RoyalCode</code>
+          </div>
+        </section>
+
+        <!-- Troubleshooting -->
+        <section id="troubleshooting" class="section">
+          <h2>🔧 Troubleshooting</h2>
+
+          <h3>Animations not triggering?</h3>
+
+          <ul>
+            <li>Make sure the CSS file is loaded before the HTML</li>
+            <li>
+              Verify JavaScript is initialized with
+              <code class="code-inline">RoyalCode.init()</code>
+            </li>
+            <li>Check browser console for errors</li>
+            <li>Ensure elements have the correct class names (rc-prefix)</li>
+          </ul>
+
+          <h3>Components not working?</h3>
+
+          <ul>
+            <li>Verify data attributes are correctly applied</li>
+            <li>Check that element IDs match the trigger references</li>
+            <li>Ensure JavaScript file is loaded after HTML content</li>
+            <li>Test in different browsers for compatibility</li>
+          </ul>
+
+          <h3>Performance issues?</h3>
+
+          <ul>
+            <li>Reduce the number of simultaneous animations</li>
+            <li>
+              Use <code class="code-inline">rc-once</code> for scroll animations
+              that should only trigger once
+            </li>
+            <li>
+              Disable animations on mobile with
+              <code class="code-inline">rc-mobile-disable</code>
+            </li>
+            <li>
+              Use hardware acceleration with
+              <code class="code-inline">will-change</code>
+            </li>
+          </ul>
+
+          <div class="alert alert-warning">
+            <strong>⚠️ Browser Support:</strong> Royal Code works on all modern
+            browsers (Chrome, Firefox, Safari, Edge). For IE11 support, use
+            polyfills.
+          </div>
+        </section>
+
+        <!-- Quick Reference -->
+        <section id="quick-ref" class="section">
+          <h2>⚡ Quick Reference</h2>
+
+          <h3>Most Used Animation Classes</h3>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Use Case</th>
+                <th>Class</th>
+                <th>Modifier</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Simple fade in</td>
+                <td><code class="code-inline">rc-fade</code></td>
+                <td><code class="code-inline">rc-speed-slow</code></td>
+              </tr>
+              <tr>
+                <td>Bottom to top slide</td>
+                <td><code class="code-inline">rc-fade-up</code></td>
+                <td><code class="code-inline">rc-delay-300</code></td>
+              </tr>
+              <tr>
+                <td>Zoom entrance</td>
+                <td><code class="code-inline">rc-zoom-in</code></td>
+                <td><code class="code-inline">rc-ease-bounce</code></td>
+              </tr>
+              <tr>
+                <td>Rotate effect</td>
+                <td><code class="code-inline">rc-rotate-in</code></td>
+                <td><code class="code-inline">rc-speed-fast</code></td>
+              </tr>
+              <tr>
+                <td>Special effect</td>
+                <td><code class="code-inline">rc-glitch</code></td>
+                <td><code class="code-inline">rc-ease-elastic</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h3>🎨 Royal Code Library v1.0.0</h3>
+      <p>Professional CSS & JavaScript Library by Usama Bashir</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://npm.js.com" target="_blank">NPM</a>
+        <a href="mailto:support@royalcode.dev">Support</a>
+        <a href="#">License</a>
+      </div>
+      <p style="margin-top: 2rem; opacity: 0.7">
+        © 2024 Royal Code Library. All rights reserved. MIT License.
+      </p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop">↑</button>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
